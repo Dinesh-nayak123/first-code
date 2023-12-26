@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 150px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>IMAGE COLLECTION</h2>
+    <div>
+        <ul id="imgs">
+            <li><img id="laptop" src="https://tse3.mm.bing.net/th?id=OIP.iApVsqSNRuxoE1ynjRngOwHaEo&pid=Api&P=0&h=180" alt=""></li>
+            <li><img id="bird" src="https://tse4.mm.bing.net/th?id=OIP.qLc7CKA1SnBvANPyTe5zeAHaEK&pid=Api&P=0&h=180" alt=""></li>
+            <li><img id="bike" src="https://tse1.mm.bing.net/th?id=OIP.kV2m98sUmk70tS9pr-NgsQHaF7&pid=Api&P=0&h=180" alt=""></li>
+            <li><img id="cycle" src="https://tse1.mm.bing.net/th?id=OIP.MovCtlrCMEag-lrXyCLFKAHaEK&pid=Api&P=0&h=180" alt=""></li>
+            <li><a href="https://www.google.co.in/" id="google">google</a></li>
+        </ul>
+    </div>
+</body>
+<!-- note -->
+<!-- // type, timestamp,defultPrevented
+// target, toElement, srcElement, currentTarget
+// clientX, clientY, screenX, screenY
+// altKey, ctrlKey, shiftKey, keyCode -->
+
+<!-- false mean bubbling => sabubele eventlitiner re 3rd parameter false thai false meaning bubbling mode, bubbling mode re re buttom to top click hei hei jai -->
+
+<!-- true mean capturing => 3rd parameter re capturing method use karipariba, capturing mode re top to buttom click hei hei jai -->
+<!-- stopPropagation => click element bubbling na haba pain use hua -->
+<script>
+    // document.getElementById('bird').onclick =function(){
+    //     bird.style.display = "none"
+    // }
+    // document.getElementById('imgs').addEventListener('click', function(e){
+    //     console.log("clicked");
+        
+    // },false)
+    // document.getElementById('bird').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation();
+    // },false)
+    // document.getElementById('google').addEventlitiner('click',function(e){
+    // e.preventDefult();
+    // console.log("google clicked")
+    // })
+    document.getElementById('imgs').addEventListener('click',function(e){
+        console.log(e);
+        console.log(e.target.parentNode);
+        // e.preventDefault();
+        let removeIt = e.target.parenteNode
+        removeIt.remove()
+        // removeIt.parentNode.removeChild(removeIt)
+    })
+</script>
+</html>

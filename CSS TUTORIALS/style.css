@@ -1,0 +1,46 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-color: #bced1b;
+    transition-property: all;
+    transition-duration: 2s;
+    
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    animation: coloranimate 2s linear 2s infinite normal;
+}
+@media(max-width : 300px){
+    div{
+        background-color: green;
+    }
+}
+@media(min-width : 300px) and (max-width : 400px){
+    div{
+        background-color: pink;
+    }
+}
+@media(min-width : 400px) and (max-width : 600px){
+    div{
+        background-color: red;
+    }
+}
+@media(min-width : 600px){
+    div{
+        background-color: blue;
+    }
+}
+@keyframes coloranimate{
+    from {left:0px}
+    to {right:200px}
+}
+div:hover{
+    background-color: aqua;
+    /* transform: scale(2 ,0.5); */
+    /* transform: translateY(100px); */
+    /* transform: skew(90deg); */
+    
+}
+div:active{
+    background-color: #5e0645;
+}

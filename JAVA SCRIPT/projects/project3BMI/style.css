@@ -1,0 +1,22 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+body{
+    background-color: gainsboro;
+}
+#container{
+    width: 100%;
+    text-align: center;
+    
+}
+form{
+    margin: 30px auto 30px;
+}
+#results{
+    display: inline-block;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+    background-color: ghostwhite;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+</head>
+<body style = "background-color: black; color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    //aei method re kemiti new item add haba method
+    function addLanguageName(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguageName("python")
+    addLanguageName("java")
+
+    function addOptiLangauage(langName) {
+        const li = document.createElement('li');
+        const lang = document.createTextNode(langName)
+        li.appendChild(lang);
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLangauage("kunal")
+
+    // edit replace
+    //aei method re item kemiti replce ba technique
+    const secLang = document.querySelector("li:nth-child(2)");
+    const newLi = document.createElement('li');
+    newLi.textContent = "mojo";
+    secLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector("li:first-child");
+    const firstLi = document.createElement('li');
+    firstLi.textContent = "king";
+    firstLang.replaceWith(firstLi);
+
+    //edit
+    //const firstLang = document.querySelector("li:first-child");
+    // firstLang.outerHTML = '<li>typescript</li>'
+
+
+    //aei method re item kemiti remove haba technique
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove()
+
+</script>
+</html> 

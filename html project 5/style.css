@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    /* background-color: #a62c2c; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid whitesmoke;
+}
+
+.logo img{
+    height: 50px;
+    padding: 0vw 5vw;
+    border-radius: 50%;
+}
+
+.nav-icons{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-icons li{
+    list-style: none;
+    padding-top: 4px;
+    
+}
+.nav-icons li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.icon{
+    display: none;
+}
+
+.nav-icons button{
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(99, 43, 23);
+    color: aliceblue;
+}
+
+/* .main-container{
+
+} */
+.first-section{
+    height: calc(100%);
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.text-content{
+    width: 50%;
+    height: 100%;
+    padding: 2.5vw;
+}
+.text-content h1{
+    font-size: 3vw;
+    width: 100%;
+    padding: 2vw ;
+}
+.text-content p{
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: rgb(117, 113, 113);
+    width: 100%;
+    padding: 0vw 2vw;
+}
+.inner-name{
+    color: rgb(190, 55, 55);
+}
+.text-content button{
+    padding: 7px;
+    border: none;
+    border-radius: 9px;
+    background-color: hsl(0, 51%, 27%);
+    color: aliceblue;
+    margin: 2vw;
+}
+.img-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.img-content img{
+    width: 60%;
+   
+}
+
+/* Responsive code below */
+@media (max-width:600px) {
+    
+    .icon{
+        display: flex;
+        gap: 5vw;
+        padding: 0px 20px;
+        font-weight: 800;
+        font-size: 25px;
+        
+    }
+    .nav-icons li{
+        display: none;
+    }
+    .nav-icons button{
+        display: none;
+    }
+
+    .logo img{
+        height: 40px;
+        margin: 0px 20px;
+    }
+
+    .first-section{
+        flex-direction: column;
+    }
+    .text-content{
+        width: 100%;
+        padding: 6vw 8vw;
+    }
+    .text-content h1{
+        font-size: 35px;
+    }
+    .text-content p{
+        font-size: 15px;
+    }
+    .img-content{
+        width: 100%;
+        
+    }
+    .img-content img{
+        width: 80%;
+        
+    }
+}

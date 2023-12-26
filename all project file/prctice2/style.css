@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+.text-scrollor{
+    width: 98% ;
+    margin: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1; 
+}
+h2{
+    font-size: 120px;
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: 2px rgb(183, 25, 51);
+    color: transparent;
+    transition: all linear 0.4s;
+    margin: 20px;
+    
+}
+.text-scrollor::-webkit-scrollbar{
+    display: none;
+}
+h2:hover{
+    color: pink;
+}
+@keyframes scroll{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+.bar{
+    height: 177px;
+    width: 1%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    box-shadow: 10px 0px 100px 20px red;
+}
+
+.right{
+    right: 0;
+}
+.bg-img{
+    position: relative;
+    width: 70vw;
+    margin: auto;
+}
+.bg-img img{
+    width: 70vw;
+    display: block;
+    margin: auto;
+    /* filter: blur(5px) brightness(1); */
+    padding: 30px 0;
+    position: absolute;
+}
+
+.toggle {
+    display: block;
+    margin: auto;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+.toggle-img .hide{
+    z-index: 99;
+}

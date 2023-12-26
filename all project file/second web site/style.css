@@ -1,0 +1,21 @@
+.menu-bar{
+    height: 100px;
+    width: 150px;
+    background-color: aliceblue;
+    display: none;
+    transition: 100px 2s ease-in-out 0.2s ;
+}
+.nav-btn {
+    height: 40px;
+    width: 100px;
+    background-color: yellow;
+}
+
+#menu-close{
+    display: none;
+}
+#menu-btn{
+    display: block;
+}
+
+    
